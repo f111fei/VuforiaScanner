@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/splash_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/vuforia_splash" android:scaleType="fitXY" android:contentDescription="@string/splash_screen_description" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="35.0" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="25.0">
+            <ImageView android:id="@id/logo_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/logo" android:scaleType="centerInside" android:contentDescription="@string/splash_screen_description" />
+        </RelativeLayout>
+        <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="35.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ff575757</color>
+    <color name="red">#ffff0000</color>
+    <color name="light_gray">#ffd3d3d3</color>
+    <color name="semi_transparent_black">#c8000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="titlebackgroundcolor">#ff58b847</color>
+    <color name="title_pressed_color">#ff0f5f6b</color>
+    <color name="listbackgroundcolor">#ffefefef</color>
+    <color name="background_item_selected">#66000000</color>
+    <color name="background_item_not_selected">#00000000</color>
+</resources>

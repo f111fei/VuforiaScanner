@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainView" android:background="#ffffffff" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.vuforia.captureapp.SquareImageGridView android:id="@id/item_capture_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+            <RelativeLayout android:id="@id/greyOutView" android:background="#66000000" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/greyOutImageView" android:clickable="false" android:layout_width="92.0px" android:layout_height="92.0px" android:src="@drawable/selection_icon_selected" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/item_capture_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:lines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffa9a9a9" android:id="@id/item_capture_lastModified" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+</FrameLayout>

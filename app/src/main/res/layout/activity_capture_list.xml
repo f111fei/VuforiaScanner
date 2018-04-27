@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom" android:background="#ff9e9e9e" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="#ffffffff" android:id="@id/BtnCancel" android:background="#ff343434" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:text="@android:string/cancel" android:layout_weight="1.0" />
+        <View android:background="#ff9e9e9e" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textColor="#ffffffff" android:id="@id/BtnOk" android:background="#ff343434" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:text="@android:string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@id/gridView_capture" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="@string/columsNumber" android:layout_above="@id/bottom" android:layout_alignParentTop="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom">
+        <LinearLayout android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="28.0sp" android:textColor="#ffcccccc" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Tap " />
+            <TextView android:textSize="42.0sp" android:textColor="#ffcccccc" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="+" android:fontFamily="sans-serif-light" />
+            <TextView android:textSize="28.0sp" android:textColor="#ffcccccc" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=" to scan an object" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
